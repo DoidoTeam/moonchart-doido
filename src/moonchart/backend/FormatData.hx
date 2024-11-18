@@ -15,6 +15,7 @@ enum abstract PossibleValue(Int) from Int to Int
 // Keeping for backwards compat, should prob at this with macros too
 enum abstract Format(String) from String to String
 {
+	var FNF_DOIDO;
 	var FNF_LEGACY;
 	var FNF_LEGACY_PSYCH;
 	var FNF_LEGACY_FPS_PLUS;
@@ -34,6 +35,7 @@ enum abstract Format(String) from String to String
 	public static function getList():Array<FormatData>
 	{
 		return [
+			FNFDoido.__getFormat(),
 			FNFLegacy.__getFormat(),
 			FNFPsych.__getFormat(),
 			FNFFpsPlus.__getFormat(),
